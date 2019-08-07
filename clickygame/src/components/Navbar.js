@@ -1,23 +1,13 @@
 import React from "react";
 
-const Navbar = () => {
+const Navbar = (props) => {
     return (
         <div>
-            <nav className="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-                <a className="navbar-brand" >Clicky Game</a>
-                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon"></span>
-                </button>
-                <div className="collapse navbar-collapse" id="navbarNav">
-                    <ul className="navbar-nav">
-                        <li className="nav-item active">
-                            <a className="nav-link" >Click on an image to begin! <span className="sr-only">(current)</span></a>
-                        </li>
-                        <li className="nav-item active">
-                            <a className="nav-link" >Score: | Top Score:</a>
-                        </li>
-                    </ul>
-                </div>
+            <nav class="navbar shadow-lg fixed-top navbar-dark bg-dark">
+                <div class="navbar-brand text-white font-weight-bold">Clicky Game</div>
+                <div class="navbar-brand text-white">{props.message} </div>
+                <div class="navbar-brand text-white">Score: {props.score} </div>
+                <div class="navbar-brand text-white">Top Score: {props.topScore} </div>
             </nav>
 
         </div>
