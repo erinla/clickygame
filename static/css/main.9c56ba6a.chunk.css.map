@@ -1,0 +1,1 @@
+{"version":3,"sources":["pictures.css"],"names":[],"mappings":"AAAA,IACI,WAAY,CACZ,gBAAiB,CACjB,kBAAmB,CACnB,oBACJ","file":"main.9c56ba6a.chunk.css","sourcesContent":["img {\n    width: 200px;\n    margin: 10px 20px;\n    border-style: solid;\n    border-color: #343a40;\n}\n\n\n"]}
